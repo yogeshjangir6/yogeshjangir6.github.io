@@ -141,10 +141,15 @@
             </b></marquee>
         </div>
       </div><br>
-      <audio controls autoplay>
+      <audio controls autoplay id="my_audio" loop="loop">
         <source src="http://docs.google.com/uc?export=open&id=1Z4h44KJvhhStsDfeG4gWR13OpzT8TxP4" type="audio/mp3">
         <p>Your browser does not support HTML5 audio :(</p>
       </audio>
+        <script type="text/javascript">
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
       </br>
       <div
       style="background-color: #FF0000; border-radius: 17px; 
