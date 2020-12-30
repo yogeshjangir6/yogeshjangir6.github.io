@@ -30,7 +30,7 @@
 <script data-ad-client="ca-pub-6498460083996502" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
-<body class="bg" style=" background-image : url('')" ;>
+<body class="bg" style=" background-image : url('')" ; onload="playAudio()">
 
   <marquee class="SIKAR1" behavior="scroll" direction="up" scrolldelay="5"> <br>
     <img src="https://media.giphy.com/media/3ohhwjOPvZ5GUL8bxC/giphy.gif" height="129px" width="70px" /><br><br>
@@ -131,17 +131,15 @@
       
      <audio controls autoplay id="Myaudio">
         <source src="http://docs.google.com/uc?export=open&id=1Z4h44KJvhhStsDfeG4gWR13OpzT8TxP4" type="audio/mp3">
-        <p>Your browser does not support HTML5 audio :(</p>
+        
       </audio>
        <script>
-     var sample = document.getElementById("Myaudio");
-sample.play();
-  window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.2;
-  audio.play();
-});
-                                              </script>
+         var x = document.getElementById("Myaudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+      </script>
                                       
                                       
                                       
