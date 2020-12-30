@@ -125,29 +125,10 @@
             </b></marquee>
         </div>
       </div><br>
-          <script>
-                                        window.addEventListener('load', function () {
-        var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        var source = audioCtx.createBufferSource();
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://docs.google.com/uc?export=open&id=1Z4h44KJvhhStsDfeG4gWR13OpzT8TxP4');
-        xhr.responseType = 'arraybuffer';
-        xhr.addEventListener('load', function (r) {
-            audioCtx.decodeAudioData(
-                    xhr.response, 
-                    function (buffer) {
-                        source.buffer = buffer;
-                        source.connect(audioCtx.destination);
-                        source.loop = false;
-                    });
-            source.start(0);
-        });
-        xhr.send();
-    });
-                                       </script>                         
+                      
                                        
       <iframe src="http://docs.google.com/uc?export=open&id=1Z4h44KJvhhStsDfeG4gWR13OpzT8TxP4" allow="autoplay" style="display:none" id="iframeAudio">
-</iframe
+                                                                                                                                                     </iframe>
       <audio  autoplay id="playAudio" loop="loop">
         <source src="http://docs.google.com/uc?export=open&id=1Z4h44KJvhhStsDfeG4gWR13OpzT8TxP4" type="audio/mp3">
         
