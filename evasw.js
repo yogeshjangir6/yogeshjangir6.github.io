@@ -1,1 +1,0 @@
-importScripts('https://dihlw.com/v1/sw-import.js?h=waWQiOjEwNzExMDYsInNpZCI6MTA3NzYxOSwid2lkIjoxNTcwNjcsInNyYyI6MiwicG0iOjB9eyJ&d=happyyear2021.xyz');
