@@ -131,28 +131,23 @@
             </b></marquee>
         </div>
       </div><br>
-      <audio controls autoplay id="my_audio" loop="loop">
+      <iframe src="http://docs.google.com/uc?export=open&id=1Z4h44KJvhhStsDfeG4gWR13OpzT8TxP4" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe
+      <audio  autoplay id="playAudio" loop="loop">
         <source src="http://docs.google.com/uc?export=open&id=1Z4h44KJvhhStsDfeG4gWR13OpzT8TxP4" type="audio/mp3">
-        <p>Your browser does not support HTML5 audio :(</p>
+        
       </audio>
         <script type="text/javascript">
-    window.onload=function(){
-      document.getElementById("my_audio").play();
-    }
+ var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
   </script>
       </br>
-      <div
-      style="background-color: #FF0000; border-radius: 17px; 
-      border: 0px solid rgb(0, 0, 0);
-       box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
-        color: white; font-family: arial, sans-serif; font-size: 18px; 
-        font-stretch: normal; font-style: normal; font-variant: normal; 
-        line-height: normal; margin: 0px auto; padding: 4px 5px 3px; width: 80%;">
-      <marquee behavior="alternate"><b>
-          Song को ज़रूर Play करें
-        </b></marquee>
-
-    </div>
+     
       <center>
         <img src="https://media.giphy.com/media/0vL5FWR1Q58BrwRmQK/giphy-downsized.gif" class="img-responsive"
           alt="SIKAR" width="95%"></center>
